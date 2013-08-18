@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<title><%= "#{@title} | #{SITE_TITLE}" %></title><!DOCTYPE html>   
+ 	<link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">  
+ 	<link href="vendor/bootstrap/css/prettify.css" rel="stylesheet">
+<link href="vendor/bootstrap/css//docs.css" rel="stylesheet">
+<link href="vendor/bootstrap/css//bootstrap-responsive.css" rel="stylesheet">
+	<style type="text/css">  
+	.socials {  
+	padding: 10px;  
+	}  
+	</style>  
+<script type='text/javascript'>
+function change_class(elem){
+		var parentDiv = elem.parentNode;
+	if(parentDiv.className =="dropdown open" ){
+		parentDiv.className ="dropdown";
+	}else{
+		parentDiv.className ="dropdown open";
+	}
+}
+</script></head>  
+<body>  
+<div id="fb-root"></div>  
+<script>(function(d, s, id) {  
+  var js, fjs = d.getElementsByTagName(s)[0];  
+  if (d.getElementById(id)) return;  
+  js = d.createElement(s); js.id = id;  
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";  
+  fjs.parentNode.insertBefore(js, fjs);  
+}(document, 'script', 'facebook-jssdk'));</script>  
+<div class="navbar navbar-fixed-top">  
+  <div class="navbar-inner">  
+    <div class="container">  
+    <ul class="nav">  
+	  <li class="active">  
+	    <a class="brand" href="http://14.63.164.245">EVA</a>  
+	  </li>  
+	  <li><a href="http://14.63.164.245/about">About</a></li>   
+	</ul>  
+	<ul class="nav pull-right">  
+			<li><a href="http://14.63.164.245/#work">Recent Work</a></li>  
+			<li><a href="http://14.63.164.245/#members">Members</a></li>  
+	</ul>  
+    </div>  
+  </div>  
+</div>  
+		<%= yield %>
+<hr>
+<p>Copyright © 2013 EVA</p>
+<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
+<script type="text/javascript">  
+  (function() {  
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;  
+    po.src = 'https://apis.google.com/js/plusone.js';  
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);  
+  })();  
+</script>  
+</body>  
+</html>   
