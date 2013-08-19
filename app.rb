@@ -9,10 +9,10 @@ get '/' do
 end
 
 get '/facebooklogin' do
-
+"Heelo facebook"
 end
 
 get '/googlelogin' do
-
+"hello google"
 end
 
