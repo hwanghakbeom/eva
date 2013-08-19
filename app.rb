@@ -7,3 +7,12 @@ get '/' do
 	@title = 'EVA'
 		  erb :main
 end
+
+get '/facebooklogin' do
+
+end
+
+get '/googlelogin' do
+
+end
+
