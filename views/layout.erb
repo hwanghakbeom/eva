@@ -5,23 +5,29 @@
 	<title><%= "#{@title} | #{SITE_TITLE}" %></title><!DOCTYPE html>   
  	<link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">  
  	<link href="vendor/bootstrap/css/prettify.css" rel="stylesheet">
-	<link href="vendor/bootstrap/css//docs.css" rel="stylesheet">
-	<link href="vendor/bootstrap/css//bootstrap-responsive.css" rel="stylesheet">
+	<link href="vendor/bootstrap/css/docs.css" rel="stylesheet">
+	<link href="vendor/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<style type="text/css">  
 	.socials {  
 	padding: 10px;  
 	}  
 	</style>  
-<script type='text/javascript'>
-function change_class(elem){
-		var parentDiv = elem.parentNode;
-	if(parentDiv.className =="dropdown open" ){
-		parentDiv.className ="dropdown";
-	}else{
-		parentDiv.className ="dropdown open";
+	<script type='text/javascript'>
+	function change_class(elem){
+			var parentDiv = elem.parentNode;
+		if(parentDiv.className == "dropdown open" ){
+			alert(elem.parentDiv.className);
+			parentDiv.className = "dropdown";
+			alert(elem.parentDiv.className);
+		}else{
+			alert(elem.parentDiv.className);
+			parentDiv.className = "dropdown open";
+			alert(elem.parentDiv.className);
+		}
 	}
-}
-</script></head>  
+	</script>
+</head>  
 <body>  
 <div id="fb-root"></div>  
 <script>(function(d, s, id) {  
@@ -41,21 +47,21 @@ function change_class(elem){
 	  <li><a href="#about">About</a></li>   
 	</ul>  
 	<ul class="nav pull-right">  
-			<li><a href="#work">Recent Work</a></li>  
-			<li><a href="#presentation">Presentation</a></li>  
-			<li><a href="#video">Videos</a></li>  
-			<li><a href="#members">Members</a></li>  
-			<li><a href="http://evacast.net">Evacast</a></li> 
-			<li class="dropdown">
+		<li><a href="#work">Recent Work</a></li>  
+		<li><a href="#presentation">Presentation</a></li>  
+		<li><a href="#video">Videos</a></li>  
+		<li><a href="#members">Members</a></li>  
+		<li><a href="http://evacast.net">Evacast</a></li> 
+		<li class="dropdown">
 			<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" type="post" onclick="change_class(this)">login
 			<b class="caret"></b>
 		    </a> 
 				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li><a href="/myphoto"><i class="link-icon icon-large icon-user"></i><span>프로필</span></a></li>
-                <li class="divider"></li>
-                <li><a href="/logout"><i class="link-icon icon-large icon-off"></i><span>로그아웃</span></a></li>
-              </ul>
-	    </li>
+	                <li><a href="/myphoto"><i class="link-icon icon-large icon-user"></i><span>페이스북</span></a></li>
+	                <li class="divider"></li>
+	                <li><a href="/logout"><i class="link-icon icon-large icon-off"></i><span>구글</span></a></li>
+                </ul>
+        </li>
 	</ul>  
     </div>  
   </div>  
@@ -63,8 +69,6 @@ function change_class(elem){
 		<%= yield %>
 <hr>
 <p>Copyright © 2013 EVA</p>
-<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
-<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
 <script type="text/javascript">  
   (function() {  
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;  
