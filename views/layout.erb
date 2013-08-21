@@ -51,7 +51,12 @@
 		<li><a href="#presentation">Presentation</a></li>  
 		<li><a href="#video">Videos</a></li>  
 		<li><a href="#members">Members</a></li>  
-		<li><a href="http://evacast.net">Evacast</a></li> 
+		<li><a href="http://evacast.net">Evacast</a></li>
+		<% unless @myfirstphoto.nil? %>
+		<li>
+			<img alt="Picture?type=square" src="<%= @myfirstphoto.to_s %>" style="opacity:1.0;" width="50">
+		</li>
+		<% end %>
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" type="post" onclick="change_class(this)">login
 			<b class="caret"></b>
@@ -68,7 +73,7 @@
 </div>  
 		<%= yield %>
 <hr>
-<p>Copyright © 2013 EVA</p>
+<p>Copyright © 2013 EVA and Guinness warelicense</p>
 <script type="text/javascript">  
   (function() {  
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;  

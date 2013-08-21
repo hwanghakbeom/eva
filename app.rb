@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'  
 
 SITE_TITLE = "Architect for the World"
-
+set :bind, '0.0.0.0'
 get '/' do
 	@title = 'EVA'
 		  erb :main
