@@ -16,3 +16,6 @@ get '/googlelogin' do
 "hello google"
 end
 
+get '/secret' do
+	"give me a guinness"
+end
