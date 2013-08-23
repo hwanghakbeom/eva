@@ -2,6 +2,11 @@ require 'rubygems'
 require 'sinatra'  
 require 'koala'
 
+
+include Koala
+
+enable :sessions
+
 #facebook
 APP_ID     = 541378595892777
 APP_SECRET = '10222e30a7db20399a5a10b882b30bcf'
@@ -16,7 +21,7 @@ end
 
 get '/callback' do
 		session['access_token'] = session['oauth'].get_access_token(params[:code])
-		redirect '/login'
+		redirect '/'
 end
 
 get '/facebooklogin' do
