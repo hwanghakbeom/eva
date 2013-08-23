@@ -10,7 +10,7 @@ enable :sessions
 #facebook
 APP_ID     = 541378595892777
 APP_SECRET = '10222e30a7db20399a5a10b882b30bcf'
-SITE_URL   = 'http://14.63.164.245'
+SITE_URL   = 'http://14.63.164.245/'
 
 SITE_TITLE = "Architect for the World"
 set :bind, '0.0.0.0'
