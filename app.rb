@@ -40,7 +40,10 @@ get '/login' do
 
 		session['id'] = myuid
 	sess = session[:id]
-	redirect '/'
+
+	@myfirstphoto = profile["picture"]
+
+	erb :main
 	# "url" => 'http://res.cloudinary.com/dobny9ati/image/facebook/w_405,h_480,c_fill/'+url['user_userid'].to_s+'.jpg'
 end
 get '/googlelogin' do
