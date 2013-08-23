@@ -1,5 +1,6 @@
 require 'rubygems'  
 require 'sinatra'  
+require 'koala'
 
 #facebook
 APP_ID     = 541378595892777
@@ -11,6 +12,11 @@ set :bind, '0.0.0.0'
 get '/' do
 	@title = 'EVA'
 		  erb :main
+end
+
+get '/callback' do
+		session['access_token'] = session['oauth'].get_access_token(params[:code])
+		redirect '/login'
 end
 
 get '/facebooklogin' do
