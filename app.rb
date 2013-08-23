@@ -21,7 +21,7 @@ end
 
 get '/callback' do
 		session['access_token'] = session['oauth'].get_access_token(params[:code])
-		redirect '/'
+		redirect '/login'
 end
 
 get '/facebooklogin' do
@@ -32,6 +32,17 @@ get '/facebooklogin' do
 		redirect session['oauth'].url_for_oauth_code(:permissions => "publish_stream")
 end
 
+get '/login' do
+	graph = Koala::Facebook::API.new(session['access_token'])
+
+	profile = graph.get_object("me")
+	myuid = profile["id"]
+
+		session['id'] = myuid
+	sess = session[:id]
+	redirect '/'
+	# "url" => 'http://res.cloudinary.com/dobny9ati/image/facebook/w_405,h_480,c_fill/'+url['user_userid'].to_s+'.jpg'
+end
 get '/googlelogin' do
 "hello google"
 end
