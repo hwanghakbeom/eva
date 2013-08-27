@@ -18,7 +18,7 @@ set :bind, '0.0.0.0'
 
 get '/' do
 	@title = 'EVA'
-	unless session == nil
+	unless session['access_token'] == nil
 	graph = Koala::Facebook::API.new(session['access_token'])
 
 	profile = graph.get_object("me")
@@ -28,7 +28,7 @@ get '/' do
 	@myfirstphoto = 'http://res.cloudinary.com/dobny9ati/image/facebook/w_70,h_70,c_fill/'+profile["id"]+'.jpg'
 	end
 
-		  erb :main
+	erb :main
 end
 
 get '/callback' do
