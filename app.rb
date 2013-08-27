@@ -16,7 +16,6 @@ SITE_TITLE = "Architect for the World"
 set :bind, '0.0.0.0'
 get '/' do
 	@title = 'EVA'
-	@myfirstphoto = 'test'
 		  erb :main
 end
 
@@ -40,7 +39,7 @@ get '/login' do
 	myuid = profile["id"]
 	session['id'] = myuid
 	sess = session[:id]
-	@myfirstphoto = profile["picture"]
+	@myfirstphoto = 'http://res.cloudinary.com/dobny9ati/image/facebook/w_100,h_100,c_fill/'+profile["id"]+'.jpg'
 
 	erb :main
 	# "url" => 'http://res.cloudinary.com/dobny9ati/image/facebook/w_405,h_480,c_fill/'+url['user_userid'].to_s+'.jpg'
