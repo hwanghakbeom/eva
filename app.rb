@@ -16,6 +16,7 @@ SITE_TITLE = "Architect for the World"
 set :bind, '0.0.0.0'
 get '/' do
 	@title = 'EVA'
+	@myfirstphoto = 'test'
 		  erb :main
 end
 
@@ -37,10 +38,8 @@ get '/login' do
 
 	profile = graph.get_object("me")
 	myuid = profile["id"]
-
 	session['id'] = myuid
 	sess = session[:id]
-
 	@myfirstphoto = profile["picture"]
 
 	erb :main
