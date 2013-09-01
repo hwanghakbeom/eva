@@ -33,10 +33,10 @@ end
 
 get '/callback' do
 		session['access_token'] = session['oauth'].get_access_token(params[:code])
-		redirect '/'
+		redirect '/login'
 end
 
-get '/facebooklogin' do
+get '/admin' do
 		# generate a new oauth object with your app data and your callback url
 		session['oauth'] = Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL + 'callback')
 		session['fb_access_token'] = session['oauth'].get_app_access_token
@@ -51,9 +51,8 @@ get '/login' do
 	myuid = profile["id"]
 	session['id'] = myuid
 	sess = session[:id]
-	@myfirstphoto = 'http://res.cloudinary.com/dobny9ati/image/facebook/w_70,h_70,c_fill/'+profile["id"]+'.jpg'
 
-	redirect '/'
+	redirect '/myuid'
 	# "url" => 'http://res.cloudinary.com/dobny9ati/image/facebook/w_405,h_480,c_fill/'+url['user_userid'].to_s+'.jpg'
 end
 get '/googlelogin' do
