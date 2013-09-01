@@ -48,17 +48,17 @@ get '/login' do
 	graph = Koala::Facebook::API.new(session['access_token'])
 
 	profile = graph.get_object("me")
-	myuid = profile["id"]
+	:myuid = profile["id"]
 	session['id'] = myuid
 	sess = session[:id]
 
-	redirect '/myuid'
+	redirect '/:myuid'
 	# "url" => 'http://res.cloudinary.com/dobny9ati/image/facebook/w_405,h_480,c_fill/'+url['user_userid'].to_s+'.jpg'
 end
 get '/googlelogin' do
 "hello google"
 end
 
-get '/secret' do
+get '/:myuid' do
 	"give me a guinness"
 end
