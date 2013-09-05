@@ -48,8 +48,8 @@ get '/login' do
 	graph = Koala::Facebook::API.new(session['access_token'])
 
 	profile = graph.get_object("me")
-	myuid = profile["id"]
-	session['id'] = myuid
+	session['id'] = profile["id"]
+	session['name'] = profile["name"]
 	sess = session[:id]
 
 	redirect '/edit_account'
@@ -58,4 +58,6 @@ end
 
 get '/edit_account' do
 	session['id']
+	@yourname = session['name'].to_s
+	erb :editaccount
 end
