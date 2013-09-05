@@ -49,7 +49,7 @@ get '/login' do
 
 	profile = graph.get_object("me")
 	:myuid = profile["id"]
-	session['id'] = myuid
+	session['id'] = :myuid
 	sess = session[:id]
 
 	redirect '/:myuid'
