@@ -4,12 +4,12 @@ class Memberurl
 
 	def geturl
 	arr = [
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000041116152.jpg", :name => 'bla' }, 
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000041116152.jpg", :name => '정충선' }, 
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1487167459.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100002467123003.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100002000411832.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001314106197.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001340327831.jpg", :name => 'bla' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001340327831.jpg", :name => '임세홍' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000910960952.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100005234500185.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001066448386.jpg", :name => 'bla' },
@@ -35,8 +35,8 @@ class Memberurl
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001880703080.jpg", :name => '진성주' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001836043870.jpg", :name => '임선용' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001726301654.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001623690330.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000939444736.jpg", :name => '박성우' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001623690330.jpg", :name => '안병현' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000939444736.jpg", :name => '박선욱' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000259625630.jpg", :name => '김지원' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1711885611.jpg", :name => '황선희' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1680549739.jpg", :name => '김현종' },

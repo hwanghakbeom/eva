@@ -45,6 +45,14 @@ class Photo
 	property :url , Text
 end
 
+class info
+	include DataMapper::Resource
+	property :name, Text
+	property :userid, Text, :key =>true
+	property :url, Text,
+	property :photopath, Text
+end
+
 SITE_TITLE = "Architect for the World"
 set :bind, '0.0.0.0'
 @myfirstphoto = nil
