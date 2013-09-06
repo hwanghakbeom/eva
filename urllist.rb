@@ -1,3 +1,5 @@
+#!/bin/env ruby
+# encoding: utf-8
 class Memberurl
 
 	def geturl
@@ -19,10 +21,10 @@ class Memberurl
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000045787516.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100003705974291.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001699802004.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001742563428.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001448898537.jpg", :name => 'bla' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001742563428.jpg", :name => '송지현' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001448898537.jpg", :name => '남호원' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001190104759.jpg", :name => 'bla' },
-	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1184344295.jpg", :name => 'bla' },
+	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1184344295.jpg", :name => '백승용' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000975534519.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001300056614.jpg", :name => 'bla' },
 	{ :url => "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1601351625.jpg", :name => 'bla' },
