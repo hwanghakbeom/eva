@@ -38,6 +38,13 @@ class User
 	validates_uniqueness_of :userid, :message => "There's already a registration of that ID"
 end
 
+class Photo
+	include DataMapper::Resource
+	belongs_to :user
+	property :id, Serial
+	property :url , Text
+end
+
 SITE_TITLE = "Architect for the World"
 set :bind, '0.0.0.0'
 @myfirstphoto = nil
