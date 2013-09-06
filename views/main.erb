@@ -237,7 +237,7 @@ figcaption, h1, h2, h3, h4 {
 	<h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; Members</a> </h2>
 	<center>
 	<% row = 0 %>
-	<% @photoaddress.each do |url| %>
+	<% @photoaddress.each do |urlinfo| %>
 		<% if row%10 == 0 %>
 		<div class = "row-fluid">
 		<div class = "span1"></div>
@@ -245,8 +245,8 @@ figcaption, h1, h2, h3, h4 {
 		<% row = row +1 %>
 			<div class = "span1">
 				<figure style="width: 110px; height: 110px">
-				<img src = <%= url %> >
-				<figcaption><h4>손영수</h4></figcaption>
+				<img src = <%= urlinfo[:url] %> >
+				<figcaption><h4><%= urlinfo[:name] %></h4></figcaption>
 			</figure>
 			</div>
 		<% if row%10 == 0 %>

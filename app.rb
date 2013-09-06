@@ -63,6 +63,7 @@ get '/' do
 
 	urlclass = Memberurl.new
 	@photoaddress = urlclass.geturl
+	p @photoaddress
 	erb :main
 end
 
