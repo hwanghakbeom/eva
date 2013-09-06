@@ -181,54 +181,84 @@
 <hr id='members'>
 <br>
 <div class = "row-fluid" id="member">
+<style>
+figure {
+  position: relative;
+  display: block;
+  border: 1px solid #333;
+  margin: 5px 0 10px 0;
+}
+
+/* Style the figure captions, hiding them by default */
+
+figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .7em;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+/* Display the captions on hover */
+
+figure:hover figcaption {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);
+}
+
+/* Add padding and margin to the caption contents */
+
+figcaption * {
+  padding: 0 10px;
+  margin: 0;
+}
+
+figcaption *:first-child {
+  padding-top: 5px;
+}
+figcaption *:last-child {
+  padding-bottom: 5px;
+}
+
+/* Give captions and headings their own font */
+
+figcaption, h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
 	<h2><a  style="text-decoration:none; color: #800000"> &nbsp;&nbsp; Members</a> </h2>
 	<center>
-		<div class = "span12">
-
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000041116152.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1487167459.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100002467123003.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100002000411832.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001314106197.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001340327831.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000910960952.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100005234500185.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001066448386.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001850477769.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100002274717846.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001071208401.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100003198556738.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000957474908.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000045787516.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100003705974291.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001699802004.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001742563428.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001448898537.jpg">
-		    <img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001190104759.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1184344295.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000975534519.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001300056614.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1601351625.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/519557264.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000337103719.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001986937359.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001928480198.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001880703080.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001836043870.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001726301654.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100001623690330.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000939444736.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/100000259625630.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1711885611.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1680549739.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1233102578.jpg">
-			<img src = "http://res.cloudinary.com/dobny9ati/image/facebook/w_110,h_110,c_fill/1181257851.jpg">
+	<% row = 0 %>
+	<% @photoaddress.each do |url| %>
+		<% if row%10 == 0 %>
+		<div class = "row-fluid">
+		<div class = "span1"></div>
+		<% end %>
+		<% row = row +1 %>
+			<div class = "span1">
+				<figure style="width: 110px; height: 110px">
+				<img src = <%= url %> >
+				<figcaption><h4>손영수</h4></figcaption>
+			</figure>
+			</div>
+		<% if row%10 == 0 %>
+		<div class = "span1"></div>
 		</div>
+		<% end %>
+	<% end %>
 	</center>
 </div>
 
 <hr>
-
+<!-- 
 <div class = "row-fluid" id="presentation">
 <div class = "span1"></div>
 	<div class = "span11">
@@ -239,12 +269,14 @@
   <li style="list-style-type: none;"><img src="/images/wine.jpg" alt=""></li>
 	</ul>
 </div>
-</div>
-<hr>
-<div>
+</div> -->
+
+
+<!--<hr>
+ <div>
 &nbsp;&nbsp; 페이스북 좋아요 --- 들어갈 예정 
 </div>
-<div class = "row-fluid" >
+ --><div class = "row-fluid" >
 <div class = "span1" ></div>
 <div class = "span10">
     <div id="disqus_thread"></div>
