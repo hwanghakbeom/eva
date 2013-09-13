@@ -45,11 +45,11 @@ class Photo
 	property :url , Text
 end
 
-class info
+class Info
 	include DataMapper::Resource
 	property :name, Text
 	property :userid, Text, :key =>true
-	property :url, Text,
+	property :url, Text
 	property :photopath, Text
 end
 
@@ -104,4 +104,8 @@ get '/edit_account' do
 	session['id']
 	@yourname = session['name'].to_s
 	erb :editaccount
+end
+
+get '/presentation' do
+	erb :presentaion
 end
